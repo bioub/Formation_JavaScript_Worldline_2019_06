@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "Langage"
+		},
+		{
+			"path": "Async"
+		},
+		{
+			"path": "Exercice-Build"
+		},
+		{
+			"path": "TodoList"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "TodoList"
+	}
+}
