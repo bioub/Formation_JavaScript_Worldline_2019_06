@@ -5,8 +5,10 @@ const readline = require('readline');
  * @param {number} options.min La valeur min
  * @param {number} options.max La valeur max
  */
-function Jeu() {
-  options = options || {};
+function Jeu(options) { // 1 - class
+  options = options || {}; // 2 - default value
+
+  // 3 - Destructing + shorthand property + default value
   const min = options.min || 0;
   const max = options.max !== undefined ? options.max : 100;
 
@@ -20,13 +22,14 @@ function Jeu() {
 
 Jeu.prototype.jouer = function() {
   if (this.essais.length) {
+    // 4 - template literal
     console.log('Vous avez déjà joué : ' + this.essais.join(' | '));
   }
   this._rl.question('Quel est le nombre ? ', (saisie) => {
     
-    const entierSaisi = parseInt(saisie);
+    const entierSaisi = Number.parseInt(saisie);
 
-    if (isNaN(entierSaisi)) {
+    if (Number.isNaN(entierSaisi)) {
       console.log('Erreur : il faut saisir un nombre');
       return this.jouer();
     }

@@ -28,4 +28,4 @@ console.log('Fin');
 // |fCb - fCb - fCb   tCb - tCb   hCb - hCb
 // |filter          - map       - forEach   - log
 // +---------------------------------------------> temps
-//                                Jean  Eric  Fin
+//                                JEAN  ERIC  Fin
