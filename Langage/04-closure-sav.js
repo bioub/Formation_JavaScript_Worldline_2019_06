@@ -1,5 +1,5 @@
 function externe(msg) {
-  function interne() {
+  function interne() {
     console.log(msg);
   }
   return interne;
@@ -19,24 +19,23 @@ bye();
 // +----------------------------------> temps
 
 // 3 3 3 dans 100ms
-for (var i=0; i<3; i++) {
+for (var i = 0; i < 3; i++) {
   setTimeout(function() {
     console.log(i);
   }, 100);
 }
 
 // 0 1 2 dans 100ms
-for (var i=0; i<3; i++) {
+for (var i = 0; i < 3; i++) {
   setTimeout(externe(i), 100);
 }
 
 // 0 1 2 dans 100ms
-for (let i=0; i<3; i++) {
+for (let i = 0; i < 3; i++) {
   setTimeout(function() {
     console.log(i);
   }, 100);
 }
-
 
 /*
 function createButton(value) {

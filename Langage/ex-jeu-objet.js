@@ -1,4 +1,4 @@
-const readline = require('readline'); 
+const readline = require('readline');
 
 /**
  * @param {object} options Les options
@@ -23,7 +23,6 @@ Jeu.prototype.jouer = function() {
     console.log('Vous avez déjà joué : ' + this.essais.join(' | '));
   }
   this._rl.question('Quel est le nombre ? ', (saisie) => {
-    
     const entierSaisi = parseInt(saisie);
 
     if (isNaN(entierSaisi)) {
@@ -36,16 +35,15 @@ Jeu.prototype.jouer = function() {
     if (entierSaisi < this.entierAlea) {
       console.log('Trop petit');
       return this.jouer();
-    } 
-    
+    }
+
     if (entierSaisi > this.entierAlea) {
       console.log('Trop grand');
       return this.jouer();
     }
-    
+
     console.log('Gagné');
     this._rl.close();
-
   });
 };
 

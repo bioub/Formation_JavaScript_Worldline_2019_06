@@ -10,7 +10,6 @@ function jouer() {
     console.log('Vous avez déjà joué : ' + essais.join(' | '));
   }
   rl.question('Quel est le nombre ? ', (saisie) => {
-    
     const entierSaisi = parseInt(saisie);
 
     if (isNaN(entierSaisi)) {
@@ -23,16 +22,15 @@ function jouer() {
     if (entierSaisi < entierAlea) {
       console.log('Trop petit');
       return jouer();
-    } 
-    
+    }
+
     if (entierSaisi > entierAlea) {
       console.log('Trop grand');
       return jouer();
     }
-    
+
     console.log('Gagné');
     rl.close();
-
   });
 }
 
@@ -42,6 +40,6 @@ jouer();
 // ^
 // |                                            question
 // |                            question        jouer
-// |require - createInterface - jouer    ..⟳..  =>      ..⟳.. 
+// |require - createInterface - jouer    ..⟳..  =>      ..⟳..
 // +--------------------------------------------ENTREE---------> temps
-//                 
+//

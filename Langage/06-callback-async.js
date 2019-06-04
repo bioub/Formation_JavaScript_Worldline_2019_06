@@ -25,7 +25,7 @@ console.log('Fin');
 //                      Fin        C
 //
 // file d'attente de callbacks (0ms) : cbC
-// file d'attente de callbacks (2ms) : 
+// file d'attente de callbacks (2ms) :
 // file d'attente de callbacks (100ms) : cbA - cbD
 // file d'attente de callbacks (101ms) : cbD
-// file d'attente de callbacks (102ms) : 
+// file d'attente de callbacks (102ms) :

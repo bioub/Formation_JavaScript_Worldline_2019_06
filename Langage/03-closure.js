@@ -2,7 +2,7 @@
 // défini dans la portée de module (node.js)
 function externe() {
   let a = 'a';
-  function interne(b) {
+  function interne(b) {
     console.log(a); // défini dans la portée de closure
     console.log(b); // défini dans la portée locale
   }
