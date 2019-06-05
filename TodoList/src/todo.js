@@ -1,6 +1,21 @@
 (function() {
   'use strict';
 
+  // Exercice :
+  // 1 - Sur chaque ligne ajouter un bouton moins
+  // au clic de celui ci, supprimer la ligne
+  // (MDN : Element.remove ou mieux Element.removeChild)
+  // Parent : element.parentNode
+  // Event : event.target (le bouton sur lequel on a cliqué)
+
+  // 2 - Sur chaque ligne ajouter une checkbox
+  // <input type="checkbox" />
+  // Sur le clic de la checkbox du formulaire
+  // tout cocher ou décocher
+  // pour cocher ou décocher : element.checked = true/false
+  // MDN querySelectorAll (retour NodeList, pas un tableau)
+  // Convertir un nodelist en tableau : Array.from(nodeList);
+
   /**
    *
    * @param {object} todo
