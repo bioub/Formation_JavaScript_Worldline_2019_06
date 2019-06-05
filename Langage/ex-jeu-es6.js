@@ -48,5 +48,9 @@ class Jeu {
   }
 }
 
+// console.log(typeof Jeu); // function
+// console.log(typeof Jeu.prototype.jouer); // function
+
+
 const jeu = new Jeu();
 jeu.jouer();

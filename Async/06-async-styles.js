@@ -41,3 +41,5 @@ fs.promises.readFile('.prettierrc')
     console.log(err);
   }
 })();
+
+// Exemple plus avancé : https://github.com/bioub/Formation_Node.js_HomeServe_2018_06/blob/master/Async/

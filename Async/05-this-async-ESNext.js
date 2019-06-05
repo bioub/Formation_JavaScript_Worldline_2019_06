@@ -2,6 +2,7 @@ class Contact {
   constructor(name) {
     this.name = name;
   }
+  // ESnext class properties (Stage 3)
   helloSync = () => {
     console.log(`Hello my name is ${this.name}`);
   };

@@ -16,13 +16,8 @@
   // console.log(formElt, todoElt, listElt, toggleElt);
   formElt.addEventListener('submit', (event) => {
     event.preventDefault();
-    const rowElt = document.createElement('div');
-    rowElt.innerText = todoElt.value;
-
-    if (listElt.children.length) {
-      listElt.insertBefore(rowElt, listElt.firstElementChild);
-    } else {
-      listElt.appendChild(rowElt);
-    }
+    addTodo({
+      text: todoElt.value
+    }, listElt);
   });
 }());

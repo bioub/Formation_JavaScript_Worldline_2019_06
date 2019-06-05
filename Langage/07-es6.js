@@ -27,12 +27,12 @@ const fullname = 'Romain Bohdanowicz';
 const [firstName, lastName] = fullname.split(' ');
 
 // Destructuring + Default + REST
-//    [1  , 2      , 3, 4, 5        ]
+//    [1  , 2      ,3, 4, 5        ]
 const [one, two = 2, , ...othersNbs] = nbs;
 
 // Destructuring Object
 const coords = { x: 10, y: 20 };
-//    {x: 10  , y: 20}
+//    { x: 10  , y: 20   }
 const { x: valX, y: valY } = coords;
 console.log(valX); // 10
 console.log(valY); // 20

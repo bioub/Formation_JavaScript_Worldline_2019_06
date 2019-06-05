@@ -8,6 +8,8 @@ function hello(n1, n2) {
   return `Hello ${n1}, ${n2}, my name is ${this.name}`;
 }
 
+const hello2 = hello; // reference
+
 console.log(hello('Jean', 'Eric'));
 console.log(hello.call(contact, 'Jean', 'Eric'));
 console.log(hello.apply(contact, ['Jean', 'Eric']));
