@@ -5,8 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+    .rowElt.checked span {
+      color: grey;
+      text-decoration: line-through;
+    }
+  </style>
 </head>
 <body>
+  <h2>Todo list</h2>
   <form id="todoForm">
     <input type="checkbox" name="toggle" id="toggle">
     <input type="text" name="todo" id="todo">
@@ -15,7 +22,6 @@
   <div id="todoList">
 
   </div>
-  <script src="todo.js"></script>
-  <script src="index.js"></script>
+
 </body>
 </html>
